@@ -65,7 +65,7 @@ Componente ──── ComponenteMotoare ────────────�
 
 ## Tech Stack
 
-- **Database:** MySQL 8.x
+- **Database:** MySQL 9.6.0
 - **Character set:** utf8mb4 / utf8mb4_unicode_ci
 - **Language:** SQL (DDL + DML)
 
@@ -74,7 +74,7 @@ Componente ──── ComponenteMotoare ────────────�
 ## How to Run
 
 1. Make sure you have MySQL installed and running
-2. Open your MySQL client (MySQL Workbench, DBeaver, or terminal)
+2. Open your MySQL client (MySQL Workbench, DBeaver, DataGrip or terminal)
 3. Run the files in order:
 
 ```sql
@@ -107,4 +107,4 @@ automotive-catalog-db/
 
 ## Author
 
-Made by [Your Name] · [linkedin.com/in/yourprofile](https://linkedin.com)
+Made by Turcu Alexandru-Costin · [linkedin.com/in/alexandru-costin-turcu](https://www.linkedin.com/in/alexandru-costin-turcu-4a95311a6/)
