@@ -19,19 +19,7 @@ Built as a personal project to practice relational database design, normalizatio
 ---
 
 ## Database Schema
-
-```
-Marci ──────────────── Modele ──────── MotorModele ──── Motoare
-                                                            │
-                                               ┌───────────┤
-                                               │           │
-                                        TipuriCombustibil  │
-                                                           │
-Componente ──── ComponenteMotoare ─────────────────────────┘
-    │
-    ├── TipuriComponente
-    └── CrossReferences
-```
+See [Database Schema](docs/schema.md)
 
 | Table | Description |
 |---|---|
