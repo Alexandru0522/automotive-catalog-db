@@ -20,7 +20,7 @@ Built as a personal project to practice relational database design, normalizatio
 
 ## Database Schema
 
-See [Database Schema](docs/schema.md)
+![Entity-Relationship Schema](docs/schema.png)
 
 ---
 
