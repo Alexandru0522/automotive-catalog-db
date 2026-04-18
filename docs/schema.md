@@ -1,77 +1,82 @@
+```mermaid
+
 classDiagram
 direction BT
 class componente {
-   int id_tip
-   varchar(100) numar_oem
-   varchar(100) producator
-   text descriere
-   decimal(6,2) tensiune_v
-   decimal(6,2) curent_a
-   decimal(8,2) putere_w
-   decimal(10,2) pret_eur
-   int stoc_disponibil
-   timestamp created_at
-   timestamp updated_at
-   int id_componenta
+int id\_tip
+varchar(100) numar\_oem
+varchar(100) producator
+text descriere
+decimal(6,2) tensiune\_v
+decimal(6,2) curent\_a
+decimal(8,2) putere\_w
+decimal(10,2) pret\_eur
+int stoc\_disponibil
+timestamp created\_at
+timestamp updated\_at
+int id\_componenta
 }
 class componentemotoare {
-   int id_componenta
-   int id_motor
-   text note
-   timestamp updated_at
-   int id
+int id\_componenta
+int id\_motor
+text note
+timestamp updated\_at
+int id
 }
 class crossreferences {
-   int id_componenta
-   varchar(100) aftermarket_number
-   varchar(100) producator_aftermarket
-   int id
+int id\_componenta
+varchar(100) aftermarket\_number
+varchar(100) producator\_aftermarket
+int id
 }
 class marci {
-   varchar(100) nume
-   int id_marca
+varchar(100) nume
+int id\_marca
 }
 class modele {
-   int id_marca
-   varchar(100) nume_model
-   varchar(50) generatie
-   year an_start
-   year an_sfarsit
-   int id_model
+int id\_marca
+varchar(100) nume\_model
+varchar(50) generatie
+year an\_start
+year an\_sfarsit
+int id\_model
 }
 class motoare {
-   int id_model_referinta
-   int id_combustibil
-   varchar(50) cod_motor
-   int capacitate_cm3
-   int putere_cp
-   int cuplu_nm
-   varchar(20) standard_emisii
-   year an_start
-   year an_sfarsit
-   int id_motor
+int id\_model\_referinta
+int id\_combustibil
+varchar(50) cod\_motor
+int capacitate\_cm3
+int putere\_cp
+int cuplu\_nm
+varchar(20) standard\_emisii
+year an\_start
+year an\_sfarsit
+int id\_motor
 }
 class motormodele {
-   int id_motor
-   int id_model
-   int id
+int id\_motor
+int id\_model
+int id
 }
 class tipuricombustibil {
-   varchar(30) nume
-   int id_combustibil
+varchar(30) nume
+int id\_combustibil
 }
 class tipuricomponente {
-   varchar(100) nume
-   varchar(100) sistem
-   int id_tip
+varchar(100) nume
+varchar(100) sistem
+int id\_tip
 }
 
-componente  -->  tipuricomponente : id_tip
-componentemotoare  -->  componente : id_componenta
-componentemotoare  -->  motoare : id_motor
-crossreferences  -->  componente : id_componenta
-modele  -->  marci : id_marca
-motoare  -->  modele : id_model_referinta:id_model
-motoare  -->  tipuricombustibil : id_combustibil
-motormodele  -->  modele : id_model
-motormodele  -->  motoare : id_motor
+componente  -->  tipuricomponente : id\_tip
+componentemotoare  -->  componente : id\_componenta
+componentemotoare  -->  motoare : id\_motor
+crossreferences  -->  componente : id\_componenta
+modele  -->  marci : id\_marca
+motoare  -->  modele : id\_model\_referinta:id\_model
+motoare  -->  tipuricombustibil : id\_combustibil
+motormodele  -->  modele : id\_model
+motormodele  -->  motoare : id\_motor
+
+```
+
